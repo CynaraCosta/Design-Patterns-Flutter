@@ -9,7 +9,8 @@
         "content": {
             "id": "OrderCard",
             "title": "Total do pedido + Entrega",
-            "value": "R$ 72,99"
+            "value": "R$ 72,99",
+            "image": "image-path"
         },
         "footer": {
             "icon": "arrowUpFill",
