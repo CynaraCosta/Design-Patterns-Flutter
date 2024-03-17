@@ -1,0 +1,16 @@
+{
+    "data": {
+        "bgImage": "soma_image_sei_la",
+        "header": {
+            "leadingIcon": "Icon.flag",
+            "title": null,
+            "trailingIcon": null
+        },
+        "content": {
+            "id": "AddGroupingCard",
+            "title": "Agrupar meus ativos",
+            "description": "Agrupe seus ativos criando carteiras, trace metas e alcance seus objetivos"
+        },
+        "footer": null
+    }
+}
