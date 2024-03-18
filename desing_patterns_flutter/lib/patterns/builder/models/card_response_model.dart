@@ -1,3 +1,6 @@
+import 'package:desing_patterns_flutter/patterns/builder/models/card_content_response_model.dart';
+import 'package:desing_patterns_flutter/patterns/builder/models/card_footer_response_model.dart';
+import 'package:desing_patterns_flutter/patterns/builder/models/card_header_response_model.dart';
 import 'package:equatable/equatable.dart';
 
 class CardResponseModel extends Equatable {
@@ -11,15 +14,15 @@ class CardResponseModel extends Equatable {
   factory CardResponseModel.fromJson(Map<String, dynamic> json) =>
       CardResponseModel(
         json["bgImage"] as String?,
-        json["header"] as List<dynamic>?,
-        json["content"] as List<dynamic>?,
-        json["footer"] as List<dynamic>?,
+        json["header"] != null ? CardHeaderResponseModel.fromJson(json["header"]) : null,
+        json["content"] != null ? CardContentResponseModel.fromJson(json["content"]) : null,
+        json["footer"] != null ? CardFooterResponseModel.fromJson(json["footer"]) : null,
       );
 
   final String? bgImage;
-  final List<dynamic>? header;
-  final List<dynamic>? content;
-  final List<dynamic>? footer;
+  final CardHeaderResponseModel? header;
+  final CardContentResponseModel? content;
+  final CardFooterResponseModel? footer;
 
   @override
   List<Object?> get props => [
