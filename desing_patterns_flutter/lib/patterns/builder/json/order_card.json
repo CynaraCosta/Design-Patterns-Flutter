@@ -1,22 +1,21 @@
 {
-    "data": {
-        "bgImage": null,
-        "header": {
-            "leadingIcon": "Icon.flag",
-            "title": "Pizza",
-            "trailingIcon": null
-        },
-        "content": {
-            "id": "OrderCard",
-            "title": "Total do pedido + Entrega",
-            "value": "R$ 72,99",
-            "image": "image-path"
-        },
-        "footer": {
-            "icon": "arrowUpFill",
-            "iconColor": "soma_color_chart_two",
-            "label": "Status",
-            "status": "Saiu para entrega"
-        }
+    "bgImage": null,
+    "header": {
+        "leadingIcon": "Icon.flag",
+        "title": "Pizza",
+        "trailingIcon": null
+    },
+    "content": {
+        "id": "OrderCard",
+        "title": "Total do pedido + Entrega",
+        "description": null,
+        "value": "R$ 72,99",
+        "image": "image-path"
+    },
+    "footer": {
+        "icon": "arrowUpFill",
+        "iconColor": "soma_color_chart_two",
+        "label": "Status",
+        "status": "Saiu para entrega"
     }
 }

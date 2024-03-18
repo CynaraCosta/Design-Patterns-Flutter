@@ -1,4 +1,4 @@
-import 'package:desing_patterns_flutter/patterns/builder/card.dart';
+import 'package:desing_patterns_flutter/patterns/builder/card_example.dart';
 import 'package:flutter/material.dart';
 
 class CardDirector {
