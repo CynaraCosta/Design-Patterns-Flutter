@@ -1,4 +1,5 @@
 Map<String, dynamic> orderCard = {
+  "id": "order",
   "bgImage": null,
   "header": {
     "leadingIcon": "Icon.flag",
@@ -6,7 +7,6 @@ Map<String, dynamic> orderCard = {
     "trailingIcon": null
   },
   "content": {
-    "id": "orderCard",
     "title": "Total do pedido + Entrega",
     "description": null,
     "value": "RS 72,99",
