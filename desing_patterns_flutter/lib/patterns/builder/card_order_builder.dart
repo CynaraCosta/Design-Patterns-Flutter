@@ -32,15 +32,25 @@ class CardOrderBuilder implements CardBuilder {
     return Container(
       width: 312,
       height: 200,
-      decoration: const BoxDecoration(
-        color: Color(0xffFF5151),
+      decoration: BoxDecoration(
+        color: const Color(0xffFF5151),
+        borderRadius: BorderRadius.circular(16),
       ),
-      child: Column(
-        children: [
-          if (json.header != null) setHeader(json.header!),
-          if (json.content != null) setOrderContent(json.content!),
-          if (json.footer != null) setFooter(json.footer!),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 24,
+          vertical: 16,
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            if (json.header != null) setHeader(json.header!),
+            const SizedBox(height: 48),
+            if (json.content != null) setOrderContent(json.content!),
+            const SizedBox(height: 4),
+            if (json.footer != null) setFooter(json.footer!),
+          ],
+        ),
       ),
     );
   }

@@ -37,13 +37,23 @@ class CardNewOrderBuilder implements CardBuilder {
           image: AssetImage(json.bgImage ?? 'images/placeholder.jpeg'),
           fit: BoxFit.cover,
         ),
+        borderRadius: BorderRadius.circular(16),
       ),
-      child: Column(
-        children: [
-          if (json.header != null) setHeader(json.header!),
-          if (json.content != null) setOrderContent(json.content!),
-          if (json.footer != null) setFooter(json.footer!),
-        ],
+      child: Padding(
+        padding: const EdgeInsets.symmetric(
+          horizontal: 24,
+          vertical: 16,
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.start,
+          children: [
+            if (json.header != null) setHeader(json.header!),
+            const SizedBox(height: 72),
+            if (json.content != null) setOrderContent(json.content!),
+            const SizedBox(height: 4),
+            if (json.footer != null) setFooter(json.footer!),
+          ],
+        ),
       ),
     );
   }

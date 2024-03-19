@@ -3,9 +3,9 @@ Map<String, dynamic> newOrderJson = {
   "bgImage": "images/bgImage.png",
   "header": {"leadingIcon": "Icon.flag", "title": null, "trailingIcon": null},
   "content": {
-    "title": "Agrupar meus ativos",
+    "title": "Adicione um pedido",
     "description":
-        "Agrupe seus ativos criando carteiras, trace metas e alcance seus objetivos",
+        "Aproveite seus cupons e peça seu jantar diante de uma variedade de opções de pratos e restaurantes o mais próximo de você!",
     "value": null,
     "image": null
   },

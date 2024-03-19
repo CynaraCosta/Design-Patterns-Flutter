@@ -13,6 +13,7 @@ class CardNewOrderContentWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       mainAxisAlignment: MainAxisAlignment.start,
+      crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         if (model.title != null) ...{
           Text(

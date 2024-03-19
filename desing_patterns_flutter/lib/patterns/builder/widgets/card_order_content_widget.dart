@@ -16,6 +16,7 @@ class CardOrderContentWidget extends StatelessWidget {
       children: [
         Column(
           mainAxisAlignment: MainAxisAlignment.start,
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             if (model.title != null) ... {
               Text(
