@@ -1,7 +1,11 @@
 Map<String, dynamic> newOrderJson = {
   "id": "new-order",
   "bgImage": "images/bgImage.png",
-  "header": {"leadingIcon": "Icon.flag", "title": null, "trailingIcon": null},
+  "header": {
+    "leadingIcon": "Icon.flag",
+    "title": null,
+    "trailingIcon": "Icon.flag"
+  },
   "content": {
     "title": "Adicione um pedido",
     "description":
